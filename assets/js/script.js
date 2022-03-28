@@ -36,9 +36,36 @@ const navLink = document.querySelectorAll("#nav-menu")
     }
     navLink.forEach(n => n.addEventListener('click', linkAction))
 
-// ================== Accodrion Skills ===================
+// ================== The Skills ===================
+
+const skillsContent = document.getElementsByClassName('skills__content');
+const skillsHeader = document.querySelectorAll('.skills__header')
+
+function toggleSkills(){
+    let itemClass= this.parentNode.className
+
+    for(i=0; i<skillsContent.length; i++){
+        skillsContent[i].className='skills__content skills__close'
+    }
+    if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className="skills__content skills__open"
+    }
+}
+
+skillsHeader.forEach((e)=>{
+    e.addEventListener('click',toggleSkills)
+})
 
 // ================= Qualification tabs ====================
 
 // ===================== Modal Services==================
 
+
+
+// ===================== Testimonials ==================
+
+
+// ===================== Scroll Sections Active Link ==================
+
+
+// ===================== Change backgrkound header==================
