@@ -58,10 +58,52 @@ skillsHeader.forEach((e)=>{
 
 // ================= Qualification tabs ====================
 
+const tabs = document.querySelectorAll('[data-target]')
+const tabContents = document.querySelectorAll('[data-content')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () =>{
+       
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qualification__active')
+        })
+
+        target.classList.add('qualification__active');
+        
+       
+  
+        tab.classList.add('qualification__active');
+    });
+
+});
+
 // ===================== Modal Services==================
 
+const modalViews = document.querySelectorAll('.services__modal')
+const modalBtns = document.querySelectorAll('.services__button')
+const modalCloses = document.querySelectorAll('.services__modal-close')
+
+let modal = function(modalClick) {
+    modalViews[modalClick].classList.add('active-modal')
+}
 
 
+modalBtns.forEach((modalBtn, i)=>{
+    modalBtn.addEventListener('click', () =>{
+        modal(i)
+
+    })
+})
+
+modalCloses.forEach((modalClose) =>{
+    modalClose.addEventListener('click' , () =>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
 // ===================== Testimonials ==================
 
 

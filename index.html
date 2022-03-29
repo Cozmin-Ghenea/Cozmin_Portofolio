@@ -323,11 +323,11 @@
 
   <div class="qualification__container container">
       <div class="qualification__tabs">
-        <div class="qualification__button button--flex">
+        <div class="qualification__button button--flex qualification__active" data-target="#education">
           <i class="fa-solid fa-graduation-cap qualification__icon"></i>
           Education
         </div>
-        <div class="qualification__button button--flex">
+        <div class="qualification__button button--flex" data-target="#work" >
           <i class="fa-solid fa-briefcase qualification__icon"></i>
           Work
         </div>
@@ -335,7 +335,7 @@
 
       <div class="qualification__sections">
  <!-- ========================================= Qualifications content 1 ==================================== -->
-        <div class="qualification__content">
+        <div class="qualification__content qualification__active" data-content id="education">
            <!-- ========================================= Qualifications 1 ==================================== -->
           <div class="qualification__data">
             <div>
@@ -371,8 +371,7 @@
               </div>
   
               <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
+              
               </div>
             </div>
 
@@ -400,9 +399,14 @@
         </div>
 
          <!-- ========================================= Qualifications content 2 ==================================== -->
-        <div class="qualification__content">
+        <div class="qualification__content" data-content id="work">
            <!-- ========================================= Qualifications 1 ==================================== -->
           <div class="qualification__data">
+            <div></div>
+            <div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line"></span>
+            </div>
             <div>
               <h3 class="qualification__title">Web design - internship</h3>
               <span class="qualification__subtitle">Thecon Galati</span>
@@ -413,19 +417,17 @@
             </div>
 
             <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
+              
             </div>
           </div>
 
              <!-- ========================================= Qualifications 2 ==================================== -->
              <div class="qualification__data">
-              <div></div>
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-
+             <div></div>
+              <span class="qualification__rounder"></span>
+              <span class="qualification__line" style="width:0!important"></span>
+            
+              
               <div>
                 <h3 class="qualification__title">Scriptwriter</h3>
                 <span class="qualification__subtitle">GFK Romania</span>
@@ -434,15 +436,17 @@
                   2017 - 2018
                 </div>
               </div>
-  
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
+              <div><span class="qualification__line"></span></div>
+              
             </div>
 
                <!-- ========================================= Qualifications 3 ==================================== -->
           <div class="qualification__data">
+          <div></div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
             <div>
               <h3 class="qualification__title">Junior web design</h3>
               <span class="qualification__subtitle">GFK Bucuresti</span>
@@ -454,20 +458,14 @@
             </div>
 
             <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
+             
             </div>
           </div>
 
              <!-- ========================================= Qualifications 4 ==================================== -->
              <div class="qualification__data">
 
-              <div>  </div>
-
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
+          
               <div>
                 <h3 class="qualification__title">Software Engineer</h3>
                 <span class="qualification__subtitle">Invibes Bucuresti</span>
@@ -478,7 +476,7 @@
               </div>
               <div>
                 <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
+                <!-- <span class="qualification__line"></span> -->
               </div>
               
             </div>
@@ -496,11 +494,157 @@
   
     <!-- ========================================= Services ==================================== -->
 
+    <section class="services section" id="services">
+      <h2 class="section__title">Services</h2>
+      <span class="section__subtitle">What I can offer</span>
+
+      <div class="services__container container grid">
+         <!-- ========================================= Service 1 ==================================== -->
+          <div class="services__content">
+            <div>
+              <i class="fa-solid fa-table-cells-large services__icon"></i>
+              <h3 class="services__title">UI/UX <br> Designer</h3>
+            </div>
+            <span class="span button button--flex button--small button--link services__button">
+              View more
+              <i class="fa-solid fa-arrow-right  button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">UI/UX <br> Designer </h4>
+                <i class="fa-solid fa-x services__modal-close"></i>
+
+
+                <ui class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>User interface development</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>Web page development</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>UX/UI interface</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>SEO knowledge</p>
+                    </li>
+
+                </ui>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ========================================= Service 2 ==================================== -->
+          <div class="services__content">
+            <div>
+              <i class="fa-solid fa-arrow-right-arrow-left services__icon"></i>
+              <h3 class="services__title"> Frontend <br>Developer</h3>
+            </div>
+            <span class="span button button--flex button--small button--link services__button">
+              View more
+              <i class="fa-solid fa-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title"> Frontend <br> Developer </h4>
+                <i class="fa-solid fa-x services__modal-close"></i>
+
+
+                <ui class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>User interface development</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>Web page development</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>UX/UI interface</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>SEO knowledge</p>
+                    </li>
+
+                </ui>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- ========================================= Service 3 ==================================== -->
+          <div class="services__content">
+            <div>
+              <i class="fa-solid fa-pen services__icon"></i>
+              <h3 class="services__title"> Branding <br> Designer</h3>
+            </div>
+            <span class="span button button--flex button--small button--link services__button">
+              View more
+              <i class="fa-solid fa-arrow-right  button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title"> Branding <br> Designer </h4>
+                <i class="fa-solid fa-x services__modal-close"></i>
+
+
+                <ui class="services__modal-services grid">
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>User interface development</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>Web page development</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>UX/UI interface</p>
+                    </li>
+
+                    <li class="services__modal-service">
+                      <i class="fa-solid fa-circle-check services__modal-icon"></i>
+                      <p>SEO knowledge</p>
+                    </li>
+
+                </ui>
+
+              </div>
+            </div>
+
+          </div>
+        
+         </div>
+    </section>
 
     <!-- ========================================= Portofolio ==================================== -->
 
 
     <!--  =========================== Projects on the go ================  -->
+
+
+    <!--  =========================== Testimonials ================  -->
 
 
   </main>
