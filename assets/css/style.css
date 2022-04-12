@@ -371,7 +371,15 @@
             margin-left: var(--mb-0-5);
             transition:.3s
         }
-        
+
+
+        .button--white{
+            background-color:#fff ;
+            color:var(--first-color)
+        }
+        .button--white:hover{
+            background-color: #fff;
+        }
         .button--flex{
             display:inline-block;
             align-items:center;
@@ -733,8 +741,116 @@
         }
     /* =========================== Portofolio ================ */
 
+    .portofolio__container{
+        overflow: initial;
+    }
 
+    .portofolio__content{
+        padding: .5rem 2.5rem;
+    }
+
+    .portofolio__img{
+        width:295px;
+        border-radius: .5rem;
+        justify-self: center;
+    }
+
+    .portofolio__title{
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-0-5);
+    }
+
+     .portofolio__description{
+         margin-bottom: var(--mb-0-75) ;
+
+        }
+
+    .portofolio__button:hover .button__icon{
+        transform: translateX(.25rem);
+    }
+
+    .swiper{
+        overflow: visible!important;
+    }
+    .swiper-button-prev::after{
+        content:''!important;
+    }
+    .swiper-button-next::after{
+        content:''!important;
+    }
+
+    .swiper-portofolio-icon{
+        font-size: 2rem;
+        color:var(--first-color)
+
+    }
+
+    .swiper-button-prev{
+        left:-.5rem;
+    }
+
+    .swiper-button-next{
+        right:-.5rem;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets{
+        bottom: -1.2rem!important;
+
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: var(--first-color)!important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-paginatoin-bullet{
+        outline: none !important;;
+    }
     /* =========================== Projects on the go ================ */
+
+    .project{
+        text-align: center;
+    }
+
+    .project__bg{
+        background-color: var(--first-color-second);
+        padding-top: 3rem;
+    }
+
+    .project__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+
+    }
+
+    .project__description{
+        margin-bottom: var(--mb-1-5);
+
+    }
+
+    .project__title,
+    .project__description{
+        color:#fff;
+
+    }
+
+    .project__img{
+        width:232px;
+        justify-self: center;;
+    }
 
 
     /* =========================== Skills ================ */
+
+    /* =========================== Contact Me  ================ */
+
+    /* =========================== Footer ================ */
+
+    /* =========================== Scroll Up ================ */
+
+
+    /* Show Scroll */
+
+
+
+    /* =========================== Media Queries ================ */
