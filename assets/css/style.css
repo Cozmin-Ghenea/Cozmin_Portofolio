@@ -1053,7 +1053,7 @@ body.dark-theme{
     .footer__copy{
         font-size: var(--smaller-font-size);
         text-align: center;
-        color:var(--text-color);
+        color:#fff;
         margin-top: var(--mb-3);
 
     }
@@ -1163,8 +1163,17 @@ body.dark-theme{
      .project__img{
          width:200px;
      }
+    
 }
 
+@media screen and (max-width:699px) {
+    .nav__icon{
+        padding-right:1rem;
+    }
+    .about__description{
+        padding-right:1rem
+    }
+}
 
 /* For Medium devices */
 
@@ -1203,6 +1212,7 @@ body.dark-theme{
     .project__img{
         transform: scaleX(-1)
     }
+  
 }
     @media screen and ( min-width:768px){
         .container{
