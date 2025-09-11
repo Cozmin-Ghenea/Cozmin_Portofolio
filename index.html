@@ -1,861 +1,1035 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozmin-Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cozmin-Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ========================================= font Awesome Icons==================================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ========================================= Swiper CSS ==================================== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  </head>
 
+  <body>
+    <!-- ========================================= header ==================================== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Cozmin</a>
 
-  <!-- ========================================= font Awesome Icons==================================== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- ========================================= Swiper CSS ==================================== -->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-</head>
-
-<body>
-
-
-  <!-- ========================================= header ==================================== -->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">Cozmin</a>
-
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list grid">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class="fa-solid fa-house nav__icon"></i>Home
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">
-              <i class="fa-solid fa-user nav__icon"></i> About
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class="fa-solid fa-file nav__icon"></i> Skills
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">
-              <i class="fa-solid fa-briefcase nav__icon"></i> Services
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#portofolio" class="nav__link">
-              <i class="fa-solid fa-map nav__icon"></i> portfolio
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">
-              <i class="fa-solid fa-message nav__icon"></i> Contact Me
-            </a>
-          </li>
-        </ul>
-        <i class="fa-solid fa-xmark nav__close nav__icon" id="nav-close"></i>
-      </div>
-
-      <div class="nav__btns">
-        <!-- Theme change button -->
-        <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="fa-solid fa-bars nav__icon"></i>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="fa-solid fa-house nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="fa-solid fa-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="fa-solid fa-file nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="fa-solid fa-briefcase nav__icon"></i> Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portofolio" class="nav__link">
+                <i class="fa-solid fa-map nav__icon"></i> portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="fa-solid fa-message nav__icon"></i> Contact Me
+              </a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav__close nav__icon" id="nav-close"></i>
         </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- ========================================= Main ==================================== -->
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
 
-  <main class="main">
-
-    <!-- ========================================= Home ==================================== -->
-
-    <section class="home section" id="home">
-      <div class="home__container container grid">
-        <div class="home__content grid">
-          <div class="home__social">
-            <a href="https://www.linkedin.com/in/cozmin-ghenea-974901179/" target="_blank" class="home__social-icon">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.instagram.com/cozminnn/" target="_blank" class="home__social-icon">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://github.com/Cozmin-Ghenea/" target="_blank" class="home__social-icon">
-              <i class="fa-brands fa-github"></i>
-            </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars nav__icon"></i>
           </div>
+        </div>
+      </nav>
+    </header>
 
-          <div class="home__img">
-            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <mask id="mask0" mask-type="alpha">
-                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+    <!-- ========================================= Main ==================================== -->
+
+    <main class="main">
+      <!-- ========================================= Home ==================================== -->
+
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/cozmin-ghenea-974901179/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/cozminnn/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/Cozmin-Ghenea/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                   130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                   97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-              </mask>
-              <g mask="url(#mask0)">
-                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                   165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                   129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                <image class="home__blob-img" x='-22' href="assets/img/profil2.png" />
-              </g>
-            </svg>
+                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="-22"
+                    href="assets/img/profil2.png"
+                  />
+                </g>
+              </svg>
+            </div>
 
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Cozmin</h1>
+              <h3 class="home__subtitle">Frontend Developer</h3>
+              <p class="home__description">
+                Web developer specializing in front-end with expertise in HTML,
+                CSS, and JavaScript. Skilled in React and ready to learn new
+                tehnologies.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact me <i class="fa-solid fa-comment button__icon"></i>
+              </a>
+            </div>
           </div>
 
-          <div class="home__data">
-            <h1 class="home__title">
-              Hi, I'm Cozmin
-            </h1>
-            <h3 class="home__subtitle">
-              Frontend Developer
-            </h3>
-            <p class="home__description">
-              Web developer specializing in front-end with expertise in HTML, CSS, and JavaScript. Skilled in React and ready to learn new tehnologies.
-            </p>
-            <a href="#contact" class="button button--flex">
-              Contact me <i class="fa-solid fa-comment button__icon"></i>
-            </a>
-          </div>
-
-
-
-        </div>
-
-        <!-- <div class="home__scroll">
+          <!-- <div class="home__scroll">
           <a href="#about" class="home__scroll-button button--flex">
             <i class="fa-solid fa-computer-mouse home__scroll-mouse"></i>
             <span class="home__scroll-name">Scroll Down</span>
             <i class="fa-solid fa-arrow-down home__scroll-arrow"></i>
           </a>
         </div> -->
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!-- ========================================= About ==================================== -->
+      <!-- ========================================= About ==================================== -->
 
-    <section class="about section" id="about">
-      <h2 class="section__title">About me</h2>
-      <span class="section__subtitle">My introduction</span>
+      <section class="about section" id="about">
+        <h2 class="section__title">About me</h2>
+        <span class="section__subtitle">My introduction</span>
 
-      <div class="about__container container grid">
-        <img src="assets/img/Poza.jpeg" alt="" class="about__img">
-        <div class="about__data">
-          <p class="about__description">
-            I'm a front-end web developer skilled in HTML, CSS, and JavaScript. I build responsive, user-friendly interfaces using React and Node Js. I'm committed to continuous learning and keeping up with the latest web development trends.
+        <div class="about__container container grid">
+          <img src="assets/img/Poza.jpeg" alt="" class="about__img" />
+          <div class="about__data">
+            <p class="about__description">
+              I'm a front-end web developer skilled in HTML, CSS, and
+              JavaScript. I build responsive, user-friendly interfaces using
+              React and Node Js. I'm committed to continuous learning and
+              keeping up with the latest web development trends.
             </p>
 
-          <div class="about__info">
-            <div>
-              <span class="about__info-title">3+ </span>
-              <span class="about__info-name"> Years <br> experience</span>
-            </div>
-            <div>
-
-              <span class="about__info-title">10+ </span>
-              <span class="about__info-name">Completed <br> Projects</span>
-            </div>
-            <div>
-
-              <span class="about__info-title">2+ </span>
-              <span class="about__info-name">Companies <br> worked</span>
-            </div>
-          </div>
-          <div class="about_buttons">
-            <a download="" href="assets/pdf/CV_Ghenea_Cozmin_en.pdf" class="button button--flex">
-              Download CV <i class="fa-solid fa-file-arrow-down  button__icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================= Skills ==================================== -->
-
-    <section class="skills section" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <span class="section__subtitle">My Technical Level </span>
-
-      <div class="skills__container container grid">
-        <div>
-          <!-- ===================== First Skills ====================== -->
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="fa-solid fa-code skills__icon"></i>
-
+            <div class="about__info">
               <div>
-                <h1 class="skills__title">Frontend Developer</h1>
-                <span class="skills__subtitle">More than 2 years</span>
+                <span class="about__info-title">3+ </span>
+                <span class="about__info-name">
+                  Years <br />
+                  experience</span
+                >
               </div>
-
-              <i class="fa-solid fa-angle-down skills__arrow"></i>
-            </div>
-
-
-
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">HTML</h3>
-                  <span class="skills__number">90%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__html"></span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">CSS</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__css"></span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">JavaScript</h3>
-                  <span class="skills__number">65%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__js"></span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">React</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__react"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ===================== Second Skills ====================== -->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="fa-solid fa-server skills__icon"></i>
-
               <div>
-                <h1 class="skills__title">Backend Developer</h1>
-                <span class="skills__subtitle">Around one year</span>
+                <span class="about__info-title">10+ </span>
+                <span class="about__info-name"
+                  >Completed <br />
+                  Projects</span
+                >
               </div>
-
-              <i class="fa-solid fa-angle-down skills__arrow"></i>
+              <div>
+                <span class="about__info-title">2+ </span>
+                <span class="about__info-name"
+                  >Companies <br />
+                  worked</span
+                >
+              </div>
             </div>
-
-
-
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">PHP</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__php"> </span>
-                </div>
-              </div>
-
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">NodeJs</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__node"> </span>
-                </div>
-              </div>
-
-
+            <div class="about_buttons">
+              <a
+                download=""
+                href="assets/pdf/CV_Ghenea_Cozmin_en.pdf"
+                class="button button--flex"
+              >
+                Download CV
+                <i class="fa-solid fa-file-arrow-down button__icon"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div>
-          <!-- ===================== Designing Skills Skills ====================== -->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="fa-solid fa-paintbrush skills__icon"></i>
+      </section>
 
-              <div>
-                <h1 class="skills__title">Design</h1>
-                <span class="skills__subtitle">Around a year</span>
-              </div>
+      <!-- ========================================= Skills ==================================== -->
 
-              <i class="fa-solid fa-angle-down skills__arrow"></i>
-            </div>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My Technical Level </span>
 
-
-
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Photoshop</h3>
-                  <span class="skills__number">30%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage skills__photoshop"> </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================= Qualifications ==================================== -->
-    <section class="qualification section">
-      <h2 class="section__title">Qualification</h2>
-      <span class="section__subtitle">My Personal Journey</span>
-
-      <div class="qualification__container container">
-        <div class="qualification__tabs">
-          <div class="qualification__button button--flex qualification__active" data-target="#education">
-            <i class="fa-solid fa-graduation-cap qualification__icon"></i>
-            Education
-          </div>
-          <div class="qualification__button button--flex" data-target="#work">
-            <i class="fa-solid fa-briefcase qualification__icon"></i>
-            Work
-          </div>
-        </div>
-
-        <div class="qualification__sections">
-          <!-- ========================================= Qualifications content 1 ==================================== -->
-          <div class="qualification__content qualification__active" data-content id="education">
-            <!-- ========================================= Qualifications 1 ==================================== -->
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title">Informatica Economica</h3>
-                <span class="qualification__subtitle">Facultatea de Economie si Administrarea Afacerilor Galati</span>
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2014 - 2017
-                </div>
-              </div>
-
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-            </div>
-
-            <!-- ========================================= Qualifications 2 ==================================== -->
-            <div class="qualification__data">
-              <div></div>
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 class="qualification__title">Web Design</h3>
-                <span class="qualification__subtitle">Romanian Institute - Active Design</span>
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2016 - 2017
-                </div>
-              </div>
-
-              <div>
-
-              </div>
-            </div>
-
-
-            <!-- ========================================= Qualifications 3 ==================================== -->
-            <div class="qualification__data">
-              <div>
-                <h3 class="qualification__title">Online Marketing</h3>
-                <span class="qualification__subtitle">Academia de studii Economice Bucuresti</span>
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2019 - 2021
-                </div>
-              </div>
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-
-            </div>
-
-
-
-
-          </div>
-
-          <!-- ========================================= Qualifications content 2 ==================================== -->
-          <div class="qualification__content" data-content id="work">
-            <!-- ========================================= Qualifications 1 ==================================== -->
-            <div class="qualification__data">
-              <div></div>
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-              <div>
-                <h3 class="qualification__title">Web design - internship</h3>
-                <span class="qualification__subtitle">Thecon Galati</span>
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2017 - 2017
-                </div>
-              </div>
-
-              <div>
-
-              </div>
-            </div>
-
-            <!-- ========================================= Qualifications 2 ==================================== -->
-            <div class="qualification__data">
-              <div></div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line" style="width:0!important"></span>
-
-
-              <div>
-                <h3 class="qualification__title">Scriptwriter</h3>
-                <span class="qualification__subtitle">GFK Romania</span>
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2017 - 2018
-                </div>
-              </div>
-              <div><span class="qualification__line"></span></div>
-
-            </div>
-
-            <!-- ========================================= Qualifications 3 ==================================== -->
-            <div class="qualification__data">
-              <div></div>
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
-              <div>
-                <h3 class="qualification__title">Junior web design</h3>
-                <span class="qualification__subtitle">GFK Bucuresti</span>
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2018 - 2019
-
-                </div>
-              </div>
-
-              <div>
-
-              </div>
-            </div>
-
-            <!-- ========================================= Qualifications 4 ==================================== -->
-            <div class="qualification__data">
-
-
-              <div>
-                <h3 class="qualification__title">Software Engineer</h3>
-                <span class="qualification__subtitle">Invibes Bucuresti</span>
-                <div class="qualification__calendar">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  2019 - 2022
-                </div>
-              </div>
-              <div>
-                <span class="qualification__rounder"></span>
-                <!-- <span class="qualification__line"></span> -->
-              </div>
-
-            </div>
-
-
-          </div>
-
-
-
-
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================= Services ==================================== -->
-
-    <section class="services section" id="services">
-      <h2 class="section__title">Services</h2>
-      <span class="section__subtitle">What I can offer</span>
-
-      <div class="services__container container grid">
-        <!-- ========================================= Service 1 ==================================== -->
-        <div class="services__content">
+        <div class="skills__container container grid">
           <div>
-            <i class="fa-solid fa-table-cells-large services__icon"></i>
-            <h3 class="services__title">UI/UX <br> Designer</h3>
-          </div>
-          <span class="span button button--flex button--small button--link services__button">
-            View more
-            <i class="fa-solid fa-arrow-right  button__icon"></i>
-          </span>
+            <!-- ===================== First Skills ====================== -->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="fa-solid fa-code skills__icon"></i>
 
-          <div class="services__modal">
-            <div class="services__modal-content">
-              <h4 class="services__modal-title">UI/UX <br> Designer </h4>
-              <i class="fa-solid fa-x services__modal-close"></i>
+                <div>
+                  <h1 class="skills__title">Frontend Developer</h1>
+                  <span class="skills__subtitle">More than 2 years</span>
+                </div>
 
+                <i class="fa-solid fa-angle-down skills__arrow"></i>
+              </div>
 
-              <ui class="services__modal-services grid">
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>User interface development</p>
-                </li>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
+                </div>
 
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>Web page development</p>
-                </li>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__number">65%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
+                  </div>
+                </div>
 
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>UX/UI interface</p>
-                </li>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__react"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>SEO knowledge</p>
-                </li>
+            <!-- ===================== Second Skills ====================== -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fa-solid fa-server skills__icon"></i>
 
-              </ui>
+                <div>
+                  <h1 class="skills__title">Backend Developer</h1>
+                  <span class="skills__subtitle">Around one year</span>
+                </div>
 
+                <i class="fa-solid fa-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__php"> </span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">NodeJs</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__node"> </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-        </div>
-
-        <!-- ========================================= Service 2 ==================================== -->
-        <div class="services__content">
           <div>
-            <i class="fa-solid fa-arrow-right-arrow-left services__icon"></i>
-            <h3 class="services__title"> Frontend <br>Developer</h3>
-          </div>
-          <span class="span button button--flex button--small button--link services__button">
-            View more
-            <i class="fa-solid fa-arrow-right button__icon"></i>
-          </span>
+            <!-- ===================== Designing Skills Skills ====================== -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fa-solid fa-paintbrush skills__icon"></i>
 
-          <div class="services__modal">
-            <div class="services__modal-content">
-              <h4 class="services__modal-title"> Frontend <br> Developer </h4>
-              <i class="fa-solid fa-x services__modal-close"></i>
+                <div>
+                  <h1 class="skills__title">Design</h1>
+                  <span class="skills__subtitle">Around a year</span>
+                </div>
 
+                <i class="fa-solid fa-angle-down skills__arrow"></i>
+              </div>
 
-              <ui class="services__modal-services grid">
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>User interface development</p>
-                </li>
-
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>Web page development</p>
-                </li>
-
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>UX/UI interface</p>
-                </li>
-
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>SEO knowledge</p>
-                </li>
-
-              </ui>
-
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Photoshop</h3>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__photoshop"> </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
+      </section>
 
+      <!-- ========================================= Qualifications ==================================== -->
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My Personal Journey</span>
 
-        <!-- ========================================= Service 3 ==================================== -->
-        <div class="services__content">
-          <div>
-            <i class="fa-solid fa-pen services__icon"></i>
-            <h3 class="services__title"> Branding <br> Designer</h3>
-          </div>
-          <span class="span button button--flex button--small button--link services__button">
-            View more
-            <i class="fa-solid fa-arrow-right  button__icon"></i>
-          </span>
-
-          <div class="services__modal">
-            <div class="services__modal-content">
-              <h4 class="services__modal-title"> Branding <br> Designer </h4>
-              <i class="fa-solid fa-x services__modal-close"></i>
-
-
-              <ui class="services__modal-services grid">
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>User interface development</p>
-                </li>
-
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>Web page development</p>
-                </li>
-
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>UX/UI interface</p>
-                </li>
-
-                <li class="services__modal-service">
-                  <i class="fa-solid fa-circle-check services__modal-icon"></i>
-                  <p>SEO knowledge</p>
-                </li>
-
-              </ui>
-
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="fa-solid fa-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="fa-solid fa-briefcase qualification__icon"></i>
+              Work
             </div>
           </div>
 
+          <div class="qualification__sections">
+            <!-- ========================================= Qualifications content 1 ==================================== -->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!-- ========================================= Qualifications 1 ==================================== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Informatica Economica</h3>
+                  <span class="qualification__subtitle"
+                    >Facultatea de Economie si Administrarea Afacerilor
+                    Galati</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2014 - 2017
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!-- ========================================= Qualifications 2 ==================================== -->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Web Design</h3>
+                  <span class="qualification__subtitle"
+                    >Romanian Institute - Active Design</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2016 - 2017
+                  </div>
+                </div>
+
+                <div></div>
+              </div>
+
+              <!-- ========================================= Qualifications 3 ==================================== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Online Marketing</h3>
+                  <span class="qualification__subtitle"
+                    >Academia de studii Economice Bucuresti</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2019 - 2021
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================================= Qualifications content 2 ==================================== -->
+            <div class="qualification__content" data-content id="work">
+              <!-- ========================================= Qualifications 1 ==================================== -->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Web design - internship</h3>
+                  <span class="qualification__subtitle">Thecon Galati</span>
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2017 - 2017
+                  </div>
+                </div>
+
+                <div></div>
+              </div>
+
+              <!-- ========================================= Qualifications 2 ==================================== -->
+              <div class="qualification__data">
+                <div></div>
+                <span class="qualification__rounder"></span>
+                <span
+                  class="qualification__line"
+                  style="width: 0 !important"
+                ></span>
+
+                <div>
+                  <h3 class="qualification__title">Scriptwriter</h3>
+                  <span class="qualification__subtitle">GFK Romania</span>
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2017 - 2018
+                  </div>
+                </div>
+                <div><span class="qualification__line"></span></div>
+              </div>
+
+              <!-- ========================================= Qualifications 3 ==================================== -->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Junior web design</h3>
+                  <span class="qualification__subtitle">GFK Bucuresti</span>
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2018 - 2019
+                  </div>
+                </div>
+
+                <div></div>
+              </div>
+
+              <!-- ========================================= Qualifications 4 ==================================== -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Software Engineer</h3>
+                  <span class="qualification__subtitle">Invibes Bucuresti</span>
+                  <div class="qualification__calendar">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2019 - 2022
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- ========================================= Services ==================================== -->
 
-    <!-- ========================================= Portofolio ==================================== -->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I can offer</span>
 
-    <section class="portoflio section" id="portofolio">
-      <h2 class="section__title">Portfolio</h2>
-      <span class="section__subtitle">Most recent work</span>
+        <div class="services__container container grid">
+          <!-- ========================================= Service 1 ==================================== -->
+          <div class="services__content">
+            <div>
+              <i class="fa-solid fa-table-cells-large services__icon"></i>
+              <h3 class="services__title">
+                UI/UX <br />
+                Designer
+              </h3>
+            </div>
+            <span
+              class="span button button--flex button--small button--link services__button"
+            >
+              View more
+              <i class="fa-solid fa-arrow-right button__icon"></i>
+            </span>
 
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  UI/UX <br />
+                  Designer
+                </h4>
+                <i class="fa-solid fa-x services__modal-close"></i>
 
-      <div class="portofolio__container container swiper">
-        <div class="swiper-wrapper">
-          <!-- ================== First PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/SCSS-LandingPage.PNG" alt="SCSS-LandingPage" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Travel landing page</h3>
-              <p class="portofolio__description"> A landing page for a travel agency for which I've used HTML / CSS / SCSS /
-                JS </p>
-              <a href="https://cozmin-ghenea.github.io/LandingPage-CSS/"  target="_blank" class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
+                <ui class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>User interface development</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>Web page development</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>UX/UI interface</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>SEO knowledge</p>
+                  </li>
+                </ui>
+              </div>
             </div>
           </div>
 
-          <!-- ========================Finished First Project ================= -->
+          <!-- ========================================= Service 2 ==================================== -->
+          <div class="services__content">
+            <div>
+              <i class="fa-solid fa-arrow-right-arrow-left services__icon"></i>
+              <h3 class="services__title">Frontend <br />Developer</h3>
+            </div>
+            <span
+              class="span button button--flex button--small button--link services__button"
+            >
+              View more
+              <i class="fa-solid fa-arrow-right button__icon"></i>
+            </span>
 
-          <!-- ================== Second PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/BudgetProject.PNG" alt="BudgetProject" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Budget Project</h3>
-              <p class="portofolio__description"> A small application which can quickly calculate your budget, I've used
-                HTML / CSS / JS</p>
-              <a href="https://cozmin-ghenea.github.io/Budget_Proiect/"  target="_blank" class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Frontend <br />
+                  Developer
+                </h4>
+                <i class="fa-solid fa-x services__modal-close"></i>
+
+                <ui class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>User interface development</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>Web page development</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>UX/UI interface</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>SEO knowledge</p>
+                  </li>
+                </ui>
+              </div>
             </div>
           </div>
 
-          <!-- ========================Finished Second Project ================= -->
+          <!-- ========================================= Service 3 ==================================== -->
+          <div class="services__content">
+            <div>
+              <i class="fa-solid fa-pen services__icon"></i>
+              <h3 class="services__title">
+                Branding <br />
+                Designer
+              </h3>
+            </div>
+            <span
+              class="span button button--flex button--small button--link services__button"
+            >
+              View more
+              <i class="fa-solid fa-arrow-right button__icon"></i>
+            </span>
 
-          <!-- ================== Third PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/BusinessProject.PNG" alt="BusinessProject" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Business Landing Page</h3>
-              <p class="portofolio__description"> An Business agency landing page which I've created using HTML / CSS /
-                JS </p>
-              <a href="https://cozmin-ghenea.github.io/Business_Agency/"   target="_blank" class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">
+                  Branding <br />
+                  Designer
+                </h4>
+                <i class="fa-solid fa-x services__modal-close"></i>
+
+                <ui class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>User interface development</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>Web page development</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>UX/UI interface</p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i
+                      class="fa-solid fa-circle-check services__modal-icon"
+                    ></i>
+                    <p>SEO knowledge</p>
+                  </li>
+                </ui>
+              </div>
             </div>
           </div>
-
-          <!-- ========================Finished Third Project ================= -->
-
-          <!-- ================== Other PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/ColorPickerGenerator.PNG" alt="ColorPickerGenerator" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Color Picker Application</h3>
-              <p class="portofolio__description"> A color picker application which the user can take any color he want
-                or even randomize a color, this application was created using HTML / CSS / JS</p>
-              <a href="https://cozmin-ghenea.github.io/ColorPickerGenerator/"  target="_blank" class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- ========================Finished Other Project ================= -->
-
-          <!-- ================== Other PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/humansFriends.PNG" alt="humansFriends" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Human Friends Application </h3>
-              <p class="portofolio__description"> Humans friends Application is an application where the user can search
-                and select one of the friend, this application was created using HTML / CSS / ReactJs</p>
-              <a href="https://cozmin-ghenea.github.io/humans_card/" target="_blank"class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- ========================Finished Other Project ================= -->
-
-
-          <!-- ================== Other PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/PiggyGame.PNG" alt="PiggyGame" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Piggy Game Application</h3>
-              <p class="portofolio__description">This is a small game application created using HTML / CSS / JS</p>
-              <a href="https://cozmin-ghenea.github.io/ThePiggyGame/"  target="_blank" class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- ========================Finished Other Project ================= -->
-
-
-          <!-- ================== Other PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/RestaurandLandingPage.PNG" alt="RestaurandLandingPage" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Restaurant Landing Page</h3>
-              <p class="portofolio__description"> A restaurant landing page which I've created using HTML / CSS / JS</p>
-              <a href="https://cozmin-ghenea.github.io/Resturo_Restaurant/"   target="_blank" class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- ========================Finished Other Project ================= -->
-
-
-          <!-- ================== Other PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/WeatherApp.PNG" alt="WeatherApp" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Weather Application</h3>
-              <p class="portofolio__description"> A weather application which the user can check the weather in a
-                certain region or city, this application was created using HTML / CSS / NodeJS / APIs </p>
-              <a href="https://coz-weather-application.herokuapp.com/"  target="_blank" class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- ========================Finished Other Project ================= -->
-
-
-          <!-- ================== Other PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/WineLandingPage.PNG" alt="WineLandingPage" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Wine landing page</h3>
-              <p class="portofolio__description"> a Wine landing page which I've created using HTML / CSS / JS </p>
-              <a href="https://cozmin-ghenea.github.io/WineLandingPage/"  target="_blank"  class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- ========================Finished Other Project ================= -->
-
-
-          <!-- ================== Other PProject =================== -->
-          <div class="portofolio__content grid swiper-slide">
-            <img src="assets/img/ZengoProject.PNG" alt="Zengo-LandingPage" class="portofolio__img">
-            <div class="portofolio__data">
-              <h3 class="portofolio__title">Zengo landing Page</h3>
-              <p class="portofolio__description"> Zengo company Landing page , this page was created using HTML / CSS /
-                JS</p>
-              <a href="https://cozmin-ghenea.github.io/ZenGo-Project/" target="_blank" class="button button--flex button--small portofolio__button">
-                Demo
-                <i class="fa-solid fa-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- ========================Finished Other Project ================= -->
-          <!-- last Project -->
         </div>
+      </section>
 
-        <div class="swiper-button-next">
-          <i class="fa-solid fa-angle-right swiper-portofolio-icon"></i>
+      <!-- ========================================= Portofolio ==================================== -->
+
+      <section class="portoflio section" id="portofolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portofolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!-- ================== First PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/SCSS-LandingPage.PNG"
+                alt="SCSS-LandingPage"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Travel landing page</h3>
+                <p class="portofolio__description">
+                  A landing page for a travel agency for which I've used HTML /
+                  CSS / SCSS / JS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/LandingPage-CSS/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished First Project ================= -->
+
+            <!-- ================== Second PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/Cafe-Project.PNG"
+                alt="Cafe-Project"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Coffe Roasters page</h3>
+                <p class="portofolio__description">
+                  A landing page for a fictional Cafe landing Page React /
+                  TypeScript / SCSS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/CafeProject/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished First Project ================= -->
+
+            <!-- ================== Third PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/BudgetProject.PNG"
+                alt="BudgetProject"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Budget Project</h3>
+                <p class="portofolio__description">
+                  A small application which can quickly calculate your budget,
+                  I've used HTML / CSS / JS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/Budget_Proiect/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Second Project ================= -->
+
+            <!-- ================== Third PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/BusinessProject.PNG"
+                alt="BusinessProject"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Business Landing Page</h3>
+                <p class="portofolio__description">
+                  An Business agency landing page which I've created using HTML
+                  / CSS / JS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/Business_Agency/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Third Project ================= -->
+
+            <!-- ================== Other PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/ColorPickerGenerator.PNG"
+                alt="ColorPickerGenerator"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Color Picker Application</h3>
+                <p class="portofolio__description">
+                  A color picker application which the user can take any color
+                  he want or even randomize a color, this application was
+                  created using HTML / CSS / JS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/ColorPickerGenerator/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Other Project ================= -->
+
+            <!-- ================== Other PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/humansFriends.PNG"
+                alt="humansFriends"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Human Friends Application</h3>
+                <p class="portofolio__description">
+                  Humans friends Application is an application where the user
+                  can search and select one of the friend, this application was
+                  created using HTML / CSS / ReactJs
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/humans_card/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Other Project ================= -->
+
+            <!-- ================== Other PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/PiggyGame.PNG"
+                alt="PiggyGame"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Piggy Game Application</h3>
+                <p class="portofolio__description">
+                  This is a small game application created using HTML / CSS / JS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/ThePiggyGame/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Other Project ================= -->
+
+            <!-- ================== Other PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/RestaurandLandingPage.PNG"
+                alt="RestaurandLandingPage"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Restaurant Landing Page</h3>
+                <p class="portofolio__description">
+                  A restaurant landing page which I've created using HTML / CSS
+                  / JS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/Resturo_Restaurant/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Other Project ================= -->
+
+            <!-- ================== Other PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/WeatherApp.PNG"
+                alt="WeatherApp"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Weather Application</h3>
+                <p class="portofolio__description">
+                  A weather application which the user can check the weather in
+                  a certain region or city, this application was created using
+                  HTML / CSS / NodeJS / APIs
+                </p>
+                <a
+                  href="https://coz-weather-application.herokuapp.com/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Other Project ================= -->
+
+            <!-- ================== Other PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/WineLandingPage.PNG"
+                alt="WineLandingPage"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Wine landing page</h3>
+                <p class="portofolio__description">
+                  a Wine landing page which I've created using HTML / CSS / JS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/WineLandingPage/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Other Project ================= -->
+
+            <!-- ================== Other PProject =================== -->
+            <div class="portofolio__content grid swiper-slide">
+              <img
+                src="assets/img/ZengoProject.PNG"
+                alt="Zengo-LandingPage"
+                class="portofolio__img"
+              />
+              <div class="portofolio__data">
+                <h3 class="portofolio__title">Zengo landing Page</h3>
+                <p class="portofolio__description">
+                  Zengo company Landing page , this page was created using HTML
+                  / CSS / JS
+                </p>
+                <a
+                  href="https://cozmin-ghenea.github.io/ZenGo-Project/"
+                  target="_blank"
+                  class="button button--flex button--small portofolio__button"
+                >
+                  Demo
+                  <i class="fa-solid fa-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ========================Finished Other Project ================= -->
+            <!-- last Project -->
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-angle-right swiper-portofolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-angle-left swiper-portofolio-icon"></i>
+          </div>
+
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-prev">
-          <i class="fa-solid fa-angle-left swiper-portofolio-icon"></i>
-        </div>
+      </section>
 
-        <div class="swiper-pagination"></div>
+      <!--  =========================== Projects on the go ================  -->
 
-      </div>
-
-    </section>
-
-    <!--  =========================== Projects on the go ================  -->
-
-
-    <section class="project section">
+      <section class="project section">
         <div class="project__bg">
           <div class="project__container container grid">
             <div class="project__data">
               <h2 class="project__title">Did you liked what you've saw?</h2>
-              <p class="project__description"> Also you need help with your next project? I'm happy to help as far as I know and Google will help me.</p>
+              <p class="project__description">
+                Also you need help with your next project? I'm happy to help as
+                far as I know and Google will help me.
+              </p>
               <a href="#contact" class="button button--flex button--white">
                 Just send me a message
                 <i class="fa-solid fa-comment project__icon button__icon"></i>
               </a>
             </div>
 
-            <img src="assets/img/me_transparent.png" alt="" class="project__img">
+            <img
+              src="assets/img/me_transparent.png"
+              alt=""
+              class="project__img"
+            />
           </div>
         </div>
-    </section>
+      </section>
 
-    <!--  =========================== Testimonials ================  -->
+      <!--  =========================== Testimonials ================  -->
 
-
-    <!-- <section class="testimonial section">
+      <!-- <section class="testimonial section">
       <h2 class="section__title">Testimonials</h2>
       <span class="section__subtitle">What people I worked with say about me</span>
     
       <div class="testimonial__container container swiper">
         <div class="swiper-wrapper" > -->
-             <!--  =========================== Testimonial 1 ================  -->
-<!-- 
+      <!--  =========================== Testimonial 1 ================  -->
+      <!-- 
              <div class="testimonial__content swiper-slide">
                <div class="testimonial__data">
                  <div class="testimonial__header">
@@ -880,9 +1054,9 @@
 
              </div> -->
 
-             <!--  =========================== Testimonial 2 ================  -->
+      <!--  =========================== Testimonial 2 ================  -->
 
-             <!-- <div class="testimonial__content swiper-slide">
+      <!-- <div class="testimonial__content swiper-slide">
               <div class="testimonial__data">
                 <div class="testimonial__header">
                   <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
@@ -906,8 +1080,8 @@
 
             </div> -->
 
-            <!--  =========================== Testimonial 3 ================  -->
-<!-- 
+      <!--  =========================== Testimonial 3 ================  -->
+      <!-- 
             <div class="testimonial__content swiper-slide">
               <div class="testimonial__data">
                 <div class="testimonial__header">
@@ -932,134 +1106,193 @@
 
             </div>
         </div> -->
-          <!-- Add Pagination -->
-       <!-- <div class="swiper-pagination swiper-pagination-testimonial"></div>
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination swiper-pagination-testimonial"></div>
       </div>
     </section> -->
 
-    <!--  =========================== Contact Me  ================  -->
+      <!--  =========================== Contact Me  ================  -->
 
-    <section class="contact section" id="contact">
-      <h2 class="section__title">Contact Me</h2>
-      <span class="section__subtitle">Get in Touch</span>
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in Touch</span>
 
-      <div class="contact__container container grid">
-        <div>
-          <div class="contact__information">
-            <i class="fa-solid fa-phone contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Call Me</h3>
-              <span class="contact__subtitle"><a href="tel:+40752203818">(+40) 752 203 818</a> </span>
-            </div>
-          </div>
-
-          <div class="contact__information">
-            <i class="fa-solid fa-envelope contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Email Me</h3>
-              <span class="contact__subtitle"><a href="mailto: cozmin.ghenea@gmail.com">cozmin.ghenea@gmail.com</a> </span>
-            </div>
-          </div>
-
-          <div class="contact__information">
-            <i class="fa-solid fa-location-dot contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Location</h3>
-              <span class="contact__subtitle">Romania - Bucuresti </span>
-            </div>
-          </div>
-        </div>
-
-
-        <form action="" class="contact__form grid">
-          <div class="contact__inputs grid">
-            <div class="contact__content">
-              <label for="" class="contact__label">Name</label>
-              <input type="text" class="contact__input">
-            </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Email</label>
-              <input type="email" class="contact__input">
-            </div>
-          </div>
-          <div class="contact__content">
-            <label for="" class="contact__label">Project</label>
-            <input type="text" class="contact__input">
-          </div>
-          <div class="contact__content">
-            <label for="" class="contact__label">Message</label>
-           <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-          </div>
-
+        <div class="contact__container container grid">
           <div>
-            <a href="#" class="button button--flex">
-              Send Message    
-              <i class="fa-solid fa-comment button__icon"></i>
+            <div class="contact__information">
+              <i class="fa-solid fa-phone contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">
+                  <a href="tel:+40752203818">(+40) 752 203 818</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="fa-solid fa-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Email Me</h3>
+                <span class="contact__subtitle">
+                  <a href="mailto:cozmin.ghenea@gmail.com"
+                    >cozmin.ghenea@gmail.com</a
+                  >
+                </span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="fa-solid fa-location-dot contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Romania - Bucuresti</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORMULARUL CU EMAILJS -->
+          <form id="contact-form" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="name" class="contact__label">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="contact__input"
+                  required
+                />
+              </div>
+              <div class="contact__content">
+                <label for="email" class="contact__label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="contact__input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="project" class="contact__label">Project</label>
+              <input
+                type="text"
+                name="project"
+                id="project"
+                class="contact__input"
+              />
+            </div>
+            <div class="contact__content">
+              <label for="message" class="contact__label">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="0"
+                rows="7"
+                class="contact__input"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="button button--flex">
+                Send Message
+                <i class="fa-solid fa-comment button__icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- EmailJS Script -->
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <script>
+        (function () {
+          emailjs.init("6cuoHa8yAGo8vbMOV"); // cheia publică din EmailJS
+        })();
+
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_xr6sg9p", "template_fqz9rgs", this).then(
+              () => {
+                alert("✅ Message sent successfully!");
+                this.reset();
+              },
+              (err) => {
+                alert("❌ Error sending message: " + JSON.stringify(err));
+              }
+            );
+          });
+      </script>
+    </main>
+    <!-- ========================================= footer ==================================== -->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Cozmin</h1>
+            <span class="footer__subtitle">Frontend Developer</span>
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+
+            <li>
+              <a href="#portofolio" class="footer__link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="footer__link">Contact me</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://github.com/Cozmin-Ghenea"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/cozmin.ghenea/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/cozminnn/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
-        </form>
-      </div>
-    </section>
-
-
-
-  </main>
-  <!-- ========================================= footer ==================================== -->
-  <footer class="footer">
-    <div class="footer__bg">
-      <div class="footer__container container grid">
-        <div>
-          <h1 class="footer__title">Cozmin</h1>
-          <span class="footer__subtitle">Frontend Developer</span>
-        </div>
-        <ul class="footer__links">
-          <li>
-            <a href="#services" class="footer__link">Services</a>
-          </li>
-
-          <li>
-            <a href="#portofolio" class="footer__link">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="footer__link">Contact me</a>
-          </li>
-        </ul>
-
-        <div class="footer__socials">
-
-          <a href="https://github.com/Cozmin-Ghenea" target="_blank" class="footer__social">
-            <i class="fa-brands fa-github"></i>
-          </a>
-
-          <a href="https://www.facebook.com/cozmin.ghenea/"  target="_blank" class="footer__social">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-
-          <a href="https://www.instagram.com/cozminnn/" target="_blank" class="footer__social">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
         </div>
 
+        <p class="footer__copy">
+          A site created by Ghenea Cozmin with help from &#169;Bedimcode. All
+          rights reserved
+        </p>
       </div>
+    </footer>
+    <!-- ========================================= Scroll Top ==================================== -->
 
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
 
-      <p class="footer__copy">A site created by Ghenea Cozmin with help from &#169;Bedimcode. All rights reserved</p>
-    </div>
-  </footer>
-  <!-- ========================================= Scroll Top ==================================== -->
-
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class="fa-solid fa-arrow-up scrollup__icon"></i>
-  </a>
-
-  <!-- ========================================= swiper JS ==================================== -->
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <!-- ========================================= Main Js ==================================== -->
-  <script src="assets/js/script.js"></script>
-</body>
-
+    <!-- ========================================= swiper JS ==================================== -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- ========================================= Main Js ==================================== -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
